@@ -1,4 +1,11 @@
+
+
+// Test
+// Her indsættes en kommentar for at se om det påvirker tid og størrelse af build
+
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 
