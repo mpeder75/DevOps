@@ -1,0 +1,17 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /app
+COPY *.csproj ./
+RUN dotnet restore
+COPY . ./
+RUN dotnet publish -c Release -o /app/publish
+
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
+WORKDIR /app
+EXPOSE 5000
+COPY --from=build /app/publish ./
+
+RUN groupadd -r app_group && useradd -r -g app_group Poul
+USER Poul 
+
+ENTRYPOINT ["dotnet"]
+CMD ["Opgave_MinimalAPI.dll", "--urls", "http://0.0.0.0:5000"]
