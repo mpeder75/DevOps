@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Opgave_1_MinimalAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53abfd9210fd56ea738a2a9a947db3029a583a7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0756927b092b6058736eb41c6038ca262da97c93")]
 [assembly: System.Reflection.AssemblyProductAttribute("Opgave_1_MinimalAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Opgave_1_MinimalAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
